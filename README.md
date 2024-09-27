@@ -10,3 +10,6 @@ https://trello.com/b/99Kl37rM/projekt
 
 Flödesschema:
 https://app.diagrams.net/#G1Tw0ONVVCWXlloiSk2w7Zlq6_mNizUTh1#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D
+
+Flödesschema i text:
+Användaren vill kommentera på en sida, (blogg, eller beställningssida) - Användaren blir frågad om hen vill logga in — hen vill inte logga in och skriver en kommentar anonymt — kommentaren blir skickad till backend som skickar tillbaka kommentaren som nu syns på sidan — Hen vill logga in — Begär att logga in – Kommer hen ihåg lösenordet? – Om inte så kommer hen få göra ett nytt lösenord – Nya lösenordet lagras i användardatabasen — Om hen kommer ihåg lösenord så loggar hen in på sidan — Är det korrekt lösenord – Om inte skickas hen tillbaka till att logga in — Om det är rätt lösenord så loggas användaren in och kan nu skriva sin kommentar — Kommentaren blir skickad till backend och backend skickar tillbaka kommentaren som nu syns på sidan.
