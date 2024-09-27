@@ -3,7 +3,7 @@ body{
 }
 
 nav{
-    display: grid;
+    /* display: grid; */
  grid-template-columns: 1fr;
     background: rgb(20, 19, 19);
     width: 100%;
@@ -14,12 +14,19 @@ nav{
 ul{
  
   display: grid;
- grid-template-columns: repeat(4, 1fr);
- align-items: center;
+ grid-template-columns: repeat(3, 1fr);
+ align-items: stretch;
+ justify-items: stretch;
   text-align: center;
   list-style: none;
+  /* margin: 0; */
+  padding: 0;
 }
 
+li {
+  height: 54 px;
+
+}
 a{
     text-decoration: none;
     color: white;
@@ -74,8 +81,7 @@ border-radius: 10px;
   }
   img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: clamp(100px, 100%, 700px);
   }
 
   .footer{
@@ -122,5 +128,7 @@ footer p{
   }
  }
    
-
+h1{
+  font-size: clamp(16px, 2vw, 40px);
+}
   
