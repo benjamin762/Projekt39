@@ -1,44 +1,31 @@
-body{
+body {
   background: rgb(97, 97, 173);
 }
 
-nav{
-<<<<<<< HEAD
-    display: grid;
- grid-template-columns: 1fr;
-    background: rgb(20, 19, 19);
-    width: 100%;
-   align-items: center;
-   
- border: 1px solid white;
-=======
+nav {
   /* display: grid; */
   grid-template-columns: 1fr;
   background: rgb(20, 19, 19);
   width: 100%;
   align-items: center;
   border: 1px solid white;
->>>>>>> a1c226e94418592fe435ebdbfb5636fa7a9d921d
 }
-ul{
+
+ul {
   display: grid;
-<<<<<<< HEAD
  grid-template-columns: repeat(3, 1fr);
  align-items: center;
-=======
-  grid-template-columns: repeat(3, 1fr);
-  align-items: stretch;
-  justify-items: stretch;
->>>>>>> a1c226e94418592fe435ebdbfb5636fa7a9d921d
   text-align: center;
   list-style: none;
   /* margin: 0; */
   padding: 0;
 }
-li{
+
+li {
   height: 54 px;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
   font-family: "Inter", sans-serif;
@@ -46,7 +33,7 @@ a{
   font-style: normal;
 } 
 
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* grid-template-rows: repeat(4, 1fr); */
@@ -58,22 +45,26 @@ a{
   gap: 10px;
   padding: 10px;
 }
-.first{
+
+.first {
   grid-area: first;
   background-color: rgb(20, 18, 18);
   border-radius: 10px;
 }
-.second{
+
+.second {
   grid-area: second;
   background-color: rgb(18, 16, 16);
   border-radius: 10px;
 }
-.third{
+
+.third {
   grid-area: third;
   background-color: rgb(14, 12, 12);
   border-radius: 10px;
 }
-.fourth{
+
+.fourth {
     grid-area: fourth;
     background-color: rgb(27, 23, 23);
     border-radius: 10px;
@@ -86,12 +77,12 @@ a{
     text-align: center;
 }
 
-img{
+img {
   object-fit: cover;
   width: clamp(100px, 100%, 700px);
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-around; 
   align-items: center;
@@ -99,10 +90,12 @@ img{
   background-color: rgb(23, 21, 21);
   border-radius: 10px;
 }
-footer h1{
+
+footer h1 {
   color: white;
 }
-footer p{
+
+footer p {
   color: white;
 }
 
@@ -118,6 +111,7 @@ footer p{
     gap: 10px;
   }
 }
+
 @media (min-width: 431px){
   .container{
     grid-template-columns: 1fr 1fr;
@@ -130,6 +124,6 @@ footer p{
   }
 }
    
-h1{
+h1 {
   font-size: clamp(16px, 2vw, 40px);
 }
