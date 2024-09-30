@@ -1,8 +1,9 @@
 body{
-    background: rgb(97, 97, 173);
+  background: rgb(97, 97, 173);
 }
 
 nav{
+<<<<<<< HEAD
     display: grid;
  grid-template-columns: 1fr;
     background: rgb(20, 19, 19);
@@ -10,117 +11,125 @@ nav{
    align-items: center;
    
  border: 1px solid white;
+=======
+  /* display: grid; */
+  grid-template-columns: 1fr;
+  background: rgb(20, 19, 19);
+  width: 100%;
+  align-items: center;
+  border: 1px solid white;
+>>>>>>> a1c226e94418592fe435ebdbfb5636fa7a9d921d
 }
 ul{
- 
   display: grid;
+<<<<<<< HEAD
  grid-template-columns: repeat(3, 1fr);
  align-items: center;
+=======
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  justify-items: stretch;
+>>>>>>> a1c226e94418592fe435ebdbfb5636fa7a9d921d
   text-align: center;
   list-style: none;
+  /* margin: 0; */
+  padding: 0;
 }
-
+li{
+  height: 54 px;
+}
 a{
-    text-decoration: none;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: 100%;
-    font-style: normal;
-    
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 100%;
+  font-style: normal;
 } 
-p{
-  
-}
 
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: repeat(4, 1fr); */
-    grid-template-rows: repeat(auto-fit, 200px);
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-template-rows: repeat(auto-fit, 200px);
+  grid-template-areas: 
     "first first first first "
     "second third third third"
     "second fourth fourth fourth";
-    gap: 10px;
-    padding: 10px;
-
+  gap: 10px;
+  padding: 10px;
 }
 .first{
-    grid-area: first;
-background-color: rgb(20, 18, 18);
-border-radius: 10px;
-
+  grid-area: first;
+  background-color: rgb(20, 18, 18);
+  border-radius: 10px;
 }
 .second{
-    grid-area: second;
-    background-color: rgb(18, 16, 16);
-    border-radius: 10px;
+  grid-area: second;
+  background-color: rgb(18, 16, 16);
+  border-radius: 10px;
 }
 .third{
-    grid-area: third;
-    background-color: rgb(14, 12, 12);
-    border-radius: 10px;
+  grid-area: third;
+  background-color: rgb(14, 12, 12);
+  border-radius: 10px;
 }
 .fourth{
     grid-area: fourth;
     background-color: rgb(27, 23, 23);
     border-radius: 10px;
 }
+
 .container > * {
     padding: 20px;
     color: white;
     font-size: 1.2em;
     text-align: center;
-  }
-  img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+}
 
-  .footer{
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(23, 21, 21);
-    border-radius: 10px;
-    
+img{
+  object-fit: cover;
+  width: clamp(100px, 100%, 700px);
+}
 
-
-  }
-footer h5{
+.footer{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(23, 21, 21);
+  border-radius: 10px;
+}
+footer h1{
   color: white;
 }
 footer p{
   color: white;
 }
 
-
-   @media (max-width: 430px) {
-     .container{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "first"
-        "second"
-        "third"
-        "fourth"
-        ;
-        gap: 10px;
-     }
-   }
- @media (min-width: 431px){
+@media (max-width: 430px) {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "first"
+      "second"
+      "third"
+      "fourth"
+      ;
+    gap: 10px;
+  }
+}
+@media (min-width: 431px){
   .container{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "first first"
-    "second second"
-    "second  third"
-    "second  fourth"
-       
-    ;
+      "first first"
+      "second second"
+      "second third"
+      "second fourth"
+      ;
   }
- }
+}
    
-
-  
+h1{
+  font-size: clamp(16px, 2vw, 40px);
+}
